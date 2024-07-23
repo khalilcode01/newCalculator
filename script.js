@@ -30,6 +30,8 @@ function operate(a, op, b) {
         case '%':
             result = reminder(a, b);
             break;
+        case secondOperand == 0 && op == '/':
+            screen.textContent = 'Erorr can\'t divide by zero';
     }
     screen.textContent = result;
 }
