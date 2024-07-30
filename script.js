@@ -50,6 +50,7 @@ document.querySelector('.ac').addEventListener('click', () => {
     screen.textContent ='';
     firstOperand = '';
     secondOperand = '';
+    zeroFlag = 0;
 });
 document.querySelector('.dot').addEventListener('click', () => {
     if(!(screen.textContent.includes('.')))
@@ -57,7 +58,7 @@ document.querySelector('.dot').addEventListener('click', () => {
 });
 equalButton.addEventListener('click', () => {
    secondOperand = screen.textContent;
-   zeroFlag = 0;
+   
    operate(firstOperand, operand, secondOperand);
   
 });
